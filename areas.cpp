@@ -10,7 +10,7 @@ int main (int arg, char *argv[])
 	float r=0.00;
 	int cont =1;
 	do{
-        cout<<"esta son las opciones\n";
+		cout<<"esta son las opciones\n";
 		cout<<"1.- Rectangulo\n";
 		cout<<"2.- circulo\n";
 		cout<<"3.- triangulo\n";
@@ -19,7 +19,7 @@ int main (int arg, char *argv[])
 		cin>>op;
 		switch(op)
 		{
-            case 1:cout<<"ingresa el largo: \n";
+			case 1:cout<<"ingresa el largo: \n";
 			cin>>l;
 			cout<<"ingresa el ancho: \n";
 			cin>>a;
@@ -29,3 +29,18 @@ int main (int arg, char *argv[])
 			cin>>r;
 			cout<<"el area del circulo es: "<<3.1416*(r*r)<<endl;
 			break;
+			case 3: cout<<"ingrese la base: \n";
+			cin>>a;
+			cout<<"ingresa la altura: \n";
+			cin>>l;
+			cout<<"el area del triangulo es: "<<(a*l)/2<<endl;
+			break;
+			case 4:
+				cont =0;
+				break;
+				default:cout<<"opcion invalida \n";
+				break;
+		}
+	}while (cont !=0);
+		return 0;	
+}
